@@ -1,6 +1,6 @@
 
 # Category Filter Test-Project
-
+<img src="https://github.com/sundarsowmiya/Category-Filter-Test-Project/blob/master/Category-Filter-Test-Project.png">
 ## Installation
 
 Download the project and Run the command npm install.
