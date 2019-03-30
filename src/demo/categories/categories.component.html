@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h3  class="cust-txt">Test-Project  </h3>
+      <label>
+          <strong>Output : </strong>
+        </label>
+    <div class="alert alert-success" role="alert"> 
+      Selected Categories: {{values}}
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <div class="form-group">
+          <label>
+            <strong>Category Filter </strong>
+          </label>
+          <ngx-treeview [config]="config" [items]="items" (filterChange)="onFilterChange($event)" (selectedChange)="values = $event">
+          </ngx-treeview>
+          
+        </div>
+      </div>
+      <div class="col-lg-12 col-sm-12">
+          <div class="col-lg-6 col-sm-6">
+        <button type="button" class="btn btn-success" [disabled]="! isValid"> Cancle</button>&nbsp;
+        
+        <button type="button" class="btn btn-success" (click)="onFilterChange($event)"> Apply</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
